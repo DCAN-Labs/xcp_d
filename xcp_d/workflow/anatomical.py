@@ -20,7 +20,6 @@ from niworkflows.engine.workflows import LiterateWorkflow as Workflow
 from pkg_resources import resource_filename as pkgrf
 from nipype.pipeline import engine as pe
 from nipype.interfaces import utility as niu
-from nipype import MapNode as MapNode
 from ..interfaces import BrainPlotx, RibbontoStatmap
 from ..utils import bid_derivative
 from nipype.interfaces.afni import Unifize
