@@ -29,9 +29,9 @@ class _confoundInputSpec(BaseInterfaceInputSpec):
 
     cutoff = traits.Float(exit=False,mandatory=True,default=12, desc=' cutoff frequency for lp filter in breathe per min (bpm)')
      
-    low_freq= traits.Float(exit=False,mandatory=True,default=12, desc=' low frequency band for nortch filterin breathe per min (bpm)')
+    low_freq= traits.Float(exit=False,mandatory=True,default=12, desc=' low frequency band for notch filterin breathe per min (bpm)')
 
-    high_freq= traits.Float(exit=False,mandatory=True,default=16,desc=' high frequency for nortch filter in breathe per min (bpm)')
+    high_freq= traits.Float(exit=False,mandatory=True,default=16,desc=' high frequency for notch filter in breathe per min (bpm)')
     
     custom_conf = traits.Either(
         traits.Undefined, File,
@@ -46,7 +46,7 @@ class _confoundInputSpec(BaseInterfaceInputSpec):
     
 
 class _confoundOutputSpec(TraitedSpec):
-    confound_file = File(exists=True, manadatory=True,
+    confound_file = File(exists=True, mandatory=True,
                                   desc="confound matrix file")
 
 
